@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Guardar el HTML en la carpeta raíz del proyecto
+HTML_FILE="../use_git_hooks.html"
+
+# Contenido del archivo HTML
+cat <<EOF > "$HTML_FILE"
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Hooks</title>
+</head>
+<body>
+    <h1>Uso del HTML para la implementación del hook Git</h1>
+    <p>Este archivo fue generado automáticamente después del commit.</p>
+</body>
+</html>
+EOF
+
+echo "HTML file '$HTML_FILE' fue generado correctamente."
